@@ -1,10 +1,10 @@
-\# Sequential Light FSM (STM32)
+# Sequential Light FSM (STM32)
 
 A non-blocking, interrupt-driven 3-light controller built on an STM32 NUCLEO-F429ZI board. A single pushbutton drives a finite state machine (FSM) that sequences three LEDs and plays a distinct buzzer tone on each state transition.
 
 
 
-\## Function
+## Function
 
 Pressing the pushbutton (while idle) begins the sequence:
 
@@ -24,11 +24,11 @@ STATE\_IDLE --(button press)--> STATE\_RED --(3s)--> STATE\_YELLOW --(3s)--> STA
 
 
 
-\## Hardware
+## Hardware
 
 
 
-\*\*Target board\*\*: NUCLEO-F429ZI (ARM Cortex-M4 @ 180MHz)
+**Target board**: NUCLEO-F429ZI (ARM Cortex-M4 @ 180MHz)
 
 
 
@@ -56,19 +56,19 @@ The buzzer's tone changes per state. Each transition sets a new PWM frequency (v
 
 
 
-\## Building
+## Building
 
 
 
-1\. Open the project in STM32CubeIDE.
+1. Open the project in STM32CubeIDE.
 
-2\. The `.ioc` file contains the full pin/peripheral configuration. Regenerate via CubeMX if needed.
+2. The `.ioc` file contains the full pin/peripheral configuration. Regenerate via CubeMX if needed.
 
-3\. Build and flash to a NUCLEO-F429ZI over the onboard ST-LINK.
+3. Build and flash to a NUCLEO-F429ZI over the onboard ST-LINK.
 
 
 
-\## Licensing
+## Licensing
 
 
 
