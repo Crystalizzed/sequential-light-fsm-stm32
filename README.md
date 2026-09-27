@@ -37,17 +37,11 @@ Breadboard prototype pinout:
 
 
 | Pin | Nucleo Connector | Function |
-
 |-----|-------------------|----------|
-
 | PF13 | D7 | Pushbutton input (EXTI, hardware debounced, internal pull-up) |
-
 | PF15 | D2 | Red LED transistor (push-pull, active high) |
-
 | PE13 | D3 | Yellow LED transistor (push-pull, active high) |
-
 | PF14 | D4 | Green LED transistor (push-pull, active high) |
-
 | PE9  | D6 | Passive buzzer (TIM1\_CH1 PWM alternate function) |
 
 
