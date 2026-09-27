@@ -10,17 +10,17 @@ Pressing the pushbutton (while idle) begins the sequence:
 
 ```
 
-STATE\_IDLE --(button press)--> STATE\_RED --(3s)--> STATE\_YELLOW --(3s)--> STATE\_GREEN (holds)
+STATE_IDLE --(button press)--> STATE_RED --(3s)--> STATE_YELLOW --(3s)--> STATE_GREEN (holds)
 
 ```
 
-* Releasing the button at any point immediately resets everything back to `STATE\_IDLE`, with all LEDs off and buzzer off.
+* Releasing the button at any point immediately resets everything back to `STATE_IDLE`, with all LEDs off and buzzer off.
 * Each state transition triggers a short (1s) buzzer tone at a distinct pitch.
-* Timing is handled via `HAL\_GetTick()` timestamp comparisons in the main loop, so the MCU stays responsive to interrupts throughout.
+* Timing is handled via `HAL_GetTick()` timestamp comparisons in the main loop, so the MCU stays responsive to interrupts throughout.
 
 
 
-* State transitions and pushbutton edge detection are handled in `HAL\_GPIO\_EXTI\_Callback()`(ISR context). State duration and buzzer timing are evaluated in `main()`'s loop.
+* State transitions and pushbutton edge detection are handled in `HAL_GPIO_EXTI_Callback()`(ISR context). State duration and buzzer timing are evaluated in `main()`'s loop.
 
 
 
