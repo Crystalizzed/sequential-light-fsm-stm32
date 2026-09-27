@@ -44,7 +44,7 @@ Breadboard prototype pinout:
 | PF14 | D4 | Green LED transistor (push-pull, active high) |
 | PE9  | D6 | Passive buzzer (TIM1\_CH1 PWM alternate function) |
 
-
+![Circuit Schematic](images/Traffic_Light_Controller.svg)
 
 The buzzer's tone changes per state. Each transition sets a new PWM frequency (via TIM1 CH1's autoreload value) at 50% duty cycle, then cuts off after 1 second.
 
